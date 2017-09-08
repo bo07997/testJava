@@ -19,7 +19,14 @@ JDK 版本：JDK1.5 起
  * @since 1.0
  */
 public enum  Enum_singleton {
-	    INSTANCE;  
+	    INSTANCE(1,"AAA"),INSTANCE2(2,"BBB");
 	    public void whateverMethod() {  
 	    }  
+	    int code;
+	    String value;
+		private Enum_singleton(int code, String value) {
+			this.code = code;
+			this.value = value;
+		}
+	    
 }

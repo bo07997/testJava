@@ -17,7 +17,9 @@ public abstract class Shape implements Cloneable{
 	   public void setId(String id) {
 	      this.id = id;
 	   }
-	   
+	   /**
+	    * 用于返回this的克隆对象
+	    */
 	   public Object clone() {
 	      Object clone = null;
 	      try {
@@ -31,7 +33,7 @@ public abstract class Shape implements Cloneable{
  class Rectangle extends Shape {
 
 	   public Rectangle(){
-	     type = "Rectangle";
+	     super.type = "Rectangle";
 	   }
 
 	   @Override

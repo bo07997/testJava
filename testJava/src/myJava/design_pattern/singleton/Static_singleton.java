@@ -22,13 +22,14 @@ package myJava.design_pattern.singleton;
  * @since 1.0
  */
 public class Static_singleton {
-	
+
 	 private static class SingletonHolder {  
 		    private static final Static_singleton INSTANCE = new Static_singleton();  
 		    }  
 	 
 		    private Static_singleton (){}  
-		    public static final Static_singleton getInstance() {  
+
+			public static final Static_singleton getInstance() {  
 		    return SingletonHolder.INSTANCE;  
 		    }  
 }
